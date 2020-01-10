@@ -14,12 +14,14 @@ function App() {
 	return (
 		<div className="App px-4">
 			<Header/>
-			<Switch>
-				<Route path="/" component={MainPage} exact/>
-				<Route path="/items" component={ItemsPage} exact/>
-				<Route path="/part" component={PartPage} exact/>
-				<Route path="/riding-styles" component={RidingStylesPage} exact/>
-			</Switch>
+			<section className={'container mx-auto mt-16'}>
+				<Switch>
+					<Route path="/" component={MainPage} exact/>
+					<Route path="/items" component={ItemsPage} exact/>
+					<Route path="/part" component={PartPage} exact/>
+					<Route path="/riding-styles" component={RidingStylesPage} exact/>
+				</Switch>
+			</section>
 			<Footer/>
 		</div>
 	)
