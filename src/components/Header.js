@@ -51,7 +51,7 @@ function Header(props) {
 					</div>
 				</div>
 			</section>
-			<div className={'absolute top-0 right-0 h-full w-full sm:w-64 bg-white border text-center sm:text-left ' + (isOpened ? '' : 'hidden')}>
+			<div className={'absolute top-0 right-0 h-full w-full sm:w-64 bg-white text-center border-l sm:text-left ' + (isOpened ? '' : 'hidden')}>
 				<div className='flex flex-col p-3 text-gray-700 text-xl lg:text-2xl'>
 					<div className='text-right'>
 						<button onClick={toggleSidebar}>
@@ -60,10 +60,10 @@ function Header(props) {
 							</svg>
 						</button>
 					</div>
-					<Link className="border-b p-3" to={'/'} >Main</Link>
-					<Link className="border-b p-3" to={'/items'} >Items</Link>
-					<Link className="border-b p-3" to={'/part'} >Part of Board</Link>
-					<Link className="p-3" to={'/riding-styles'} >Riding Styles</Link>
+					<Link onClick={toggleSidebar} className="border-b p-3" to={'/'} >Main</Link>
+					<Link onClick={toggleSidebar} className="border-b p-3" to={'/items'} >Items</Link>
+					<Link onClick={toggleSidebar} className="border-b p-3" to={'/part'} >Part of Board</Link>
+					<Link onClick={toggleSidebar} className="p-3" to={'/riding-styles'} >Riding Styles</Link>
 				</div>
 			</div>
 		</>
