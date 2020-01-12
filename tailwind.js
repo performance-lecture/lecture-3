@@ -499,6 +499,9 @@ module.exports = {
 				},
 				'.translateX--1\\/2': {
 					transform: 'translateX(-50%)',
+				},
+				'.keep-all': {
+					wordBreak: 'keep-all',
 				}
 			}
 
