@@ -51,7 +51,7 @@ function Header(props) {
 					</div>
 				</div>
 			</section>
-			<div className={'absolute top-0 right-0 h-full w-full sm:w-64 bg-white text-center border-l z-40 sm:text-left ' + (isOpened ? '' : 'hidden')}>
+			<div className={'fixed top-0 right-0 h-full w-full sm:w-64 bg-white text-center border-l z-40 sm:text-left ' + (isOpened ? '' : 'hidden')}>
 				<div className='flex flex-col p-3 text-gray-700 text-xl lg:text-2xl'>
 					<div className='text-right'>
 						<button onClick={toggleSidebar}>
