@@ -2,8 +2,11 @@ import React from 'react'
 
 function Card(props) {
 	return (
-		<div className={'Card'}>
-			Card
+		<div className="Card text-center">
+			<img src={props.image}/>
+			<div className="p-5 font-semibold text-gray-700 text-xl">
+				{props.children}
+			</div>
 		</div>
 	)
 }
