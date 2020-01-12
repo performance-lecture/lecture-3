@@ -11,7 +11,7 @@ function Header(props) {
 
 	return (
 		<>
-			<section className={'flex bg-white border-b border-gray-200 fixed top-0 inset-x-0 z-100 h-16 items-center'}>
+			<section className="flex bg-white border-b border-gray-200 fixed top-0 inset-x-0 z-30 h-16 items-center">
 				<div className="w-full max-w-screen-xl relative mx-auto px-6">
 					<div className="flex items-center -mx-6">
 
@@ -51,7 +51,7 @@ function Header(props) {
 					</div>
 				</div>
 			</section>
-			<div className={'absolute top-0 right-0 h-full w-full sm:w-64 bg-white text-center border-l sm:text-left ' + (isOpened ? '' : 'hidden')}>
+			<div className={'absolute top-0 right-0 h-full w-full sm:w-64 bg-white text-center border-l z-40 sm:text-left ' + (isOpened ? '' : 'hidden')}>
 				<div className='flex flex-col p-3 text-gray-700 text-xl lg:text-2xl'>
 					<div className='text-right'>
 						<button onClick={toggleSidebar}>

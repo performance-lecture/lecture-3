@@ -12,9 +12,9 @@ import RidingStylesPage from './pages/RidingStylesPage'
 
 function App() {
 	return (
-		<div className="App px-4">
+		<div className="App">
 			<Header/>
-			<section className={'container mx-auto mt-16'}>
+			<section className="mx-auto mt-16">
 				<Switch>
 					<Route path="/" component={MainPage} exact/>
 					<Route path="/items" component={ItemsPage} exact/>

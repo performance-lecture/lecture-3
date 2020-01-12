@@ -1,10 +1,14 @@
 import React from 'react'
+import Banner from '../components/Banner'
 
 function MainPage(props) {
 
 	return (
-		<div className={'MainPage'}>
-			MainPage
+		<div className="MainPage -mt-16">
+			<Banner/>
+			<div className="container">
+				MainPage
+			</div>
 		</div>
 	)
 }

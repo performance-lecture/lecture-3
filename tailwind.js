@@ -282,6 +282,8 @@ module.exports = {
     inset: {
       '0': '0',
       auto: 'auto',
+			'1/2': '50%',
+			'-1/2': '-50%',
     },
     letterSpacing: {
       tighter: '-0.05em',
@@ -325,6 +327,7 @@ module.exports = {
       '5xl': '64rem',
       '6xl': '72rem',
       full: '100%',
+			none: 'none',
     },
     minHeight: {
       '0': '0',
@@ -416,6 +419,7 @@ module.exports = {
       '30': '30',
       '40': '40',
       '50': '50',
+			'-1': '-1',
     },
   },
   variants: {
@@ -487,5 +491,18 @@ module.exports = {
     zIndex: ['responsive'],
   },
   corePlugins: {},
-  plugins: [],
+  plugins: [
+		function({ addUtilities }) {
+			const newUtilities = {
+				'.translateX-1\\/2': {
+					transform: 'translateX(50%)',
+				},
+				'.translateX--1\\/2': {
+					transform: 'translateX(-50%)',
+				}
+			}
+
+			addUtilities(newUtilities, ['responsive'])
+		}
+	],
 }
