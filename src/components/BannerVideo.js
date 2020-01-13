@@ -1,9 +1,9 @@
 import React from 'react'
 import video from '../assets/banner-video.mp4'
 
-function Banner() {
+function BannerVideo() {
 	return (
-		<div className="Banner w-full h-screen overflow-hidden relative bg-texture">
+		<div className="BannerVideo w-full h-screen overflow-hidden relative bg-texture">
 			<div className="absolute h-screen w-full left-1/2">
 				<video src={video} className="absolute translateX--1/2 h-screen max-w-none min-w-screen -z-1" autoPlay loop muted/>
 			</div>
@@ -20,4 +20,4 @@ function Banner() {
 	)
 }
 
-export default Banner
+export default BannerVideo

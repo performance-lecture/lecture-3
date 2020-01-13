@@ -1,20 +1,20 @@
 import React from 'react'
-import Banner from '../components/Banner'
+import BannerVideo from '../components/BannerVideo'
 import ThreeColumns from '../components/ThreeColumns'
 import TwoColumns from '../components/TwoColumns'
 import Card from '../components/Card'
+import Meta from '../components/Meta'
 import main1 from '../assets/main1.jpg'
 import main2 from '../assets/main2.jpg'
 import main3 from '../assets/main3.jpg'
 import main_items from '../assets/main-items.jpg'
 import main_parts from '../assets/main-parts.jpg'
 import main_styles from '../assets/main-styles.jpg'
-import Meta from '../components/Meta'
 
 function MainPage(props) {
 	return (
 		<div className="MainPage -mt-16">
-			<Banner/>
+			<BannerVideo/>
 			<div className="mx-auto">
 				<ThreeColumns
 					columns={[
