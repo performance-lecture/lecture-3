@@ -16,7 +16,11 @@ function Tabs(props) {
 				))}
 			</div>
 			<div className="py-10">
-				{props.data[tab].content}
+				{props.data.map((item, index) => (
+					<div key={"tab-content-" + item.title} className={tab === index ? '' : 'hidden'}>
+						{item.content}
+					</div>
+				))}
 			</div>
 		</div>
 	)

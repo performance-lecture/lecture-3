@@ -1,25 +1,43 @@
 import React from 'react'
+
 import Tabs from '../components/Tabs'
 import BannerImage from '../components/BannerImage'
+import YoutubePlayer from '../components/YoutubePlayer'
 import main_styles from '../assets/main-styles.jpg'
 
 function RidingStylesPage(props) {
+	const opts = {
+		width: '100%',
+		height: '100%',
+		playerVars: {
+			autoplay: 1
+		}
+	};
+
 	const DATA = [
 		{
 			title: "댄싱",
-			content: "111릭ㅁㄴ이라ㅓㅁㄴ이ㅏ 미낭리마너이머 ㄴ이라ㅓㅁ니ㅏㅇ리ㅏ먼ㅇㄹ"
+			content: (
+				<YoutubePlayer id='0BwkZLJI-PI'/>
+			)
 		},
 		{
-			title: "트릭",
-			content: "22릭ㅁㄴ이라ㅓㅁㄴ이ㅏ 미낭리마너이머 ㄴ이라ㅓㅁ니ㅏㅇ리ㅏ먼ㅇㄹ"
+			title: "프리스타일",
+			content: (
+				<YoutubePlayer id='ybBMXQX_1_w'/>
+			)
 		},
 		{
 			title: "다운힐",
-			content: "3릭ㅁㄴ이라ㅓㅁㄴ이ㅏ 미낭리마너이머 ㄴ이라ㅓㅁ니ㅏㅇ리ㅏ먼ㅇㄹ"
+			content: (
+				<YoutubePlayer id='Qwim07syZgQ'/>
+			)
 		},
 		{
 			title: "프리라이딩",
-			content: "444444릭ㅁㄴ이라ㅓㅁㄴ이ㅏ 미낭리마너이머 ㄴ이라ㅓㅁ니ㅏㅇ리ㅏ먼ㅇㄹ"
+			content: (
+				<YoutubePlayer id='rO9wGssc3Dk'/>
+			)
 		}
 	]
 

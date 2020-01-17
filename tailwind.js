@@ -146,6 +146,7 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
+			'16:9': '56.25%',
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {
