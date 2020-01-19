@@ -18,7 +18,7 @@ function PartPage(props) {
 				text={'Parts of Longboard'}
 				image={main_parts}
 			/>
-			<div className="mx-auto">
+			<div className="container mx-auto">
 				<ImagesWithTitle
 					title="덱 (Deck)"
 					images={[deck1, deck2]}
