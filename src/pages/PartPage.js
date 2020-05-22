@@ -22,22 +22,22 @@ function PartPage(props) {
 				<ImagesWithTitle
 					title="덱 (Deck)"
 					images={[deck1, deck2]}
-					bgColor={'#f4f4f4'}
+					bgColor={'none'}
 				/>
 				<ImagesWithTitle
 					title="트럭 (Truck)"
 					images={[truck1]}
-					bgColor={'#fafafa'}
+					bgColor={'none'}
 				/>
 				<ImagesWithTitle
 					title="휠 (Wheel)"
 					images={[wheel1, wheel2]}
-					bgColor={'#f4f4f4'}
+					bgColor={'none'}
 				/>
 				<ImagesWithTitle
 					title="기타 부품 (ETC)"
 					images={[etc1, etc2, etc3]}
-					bgColor={'#fafafa'}
+					bgColor={'none'}
 				/>
 			</div>
 		</div>
