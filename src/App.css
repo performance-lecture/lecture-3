@@ -1,9 +1,12 @@
 .react-player iframe {
-    height: 100% !important;
+	height: 100% !important;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+@font-face {
+	font-family: BMYEONSUNG;
+	src: url('./assets/fonts/BMYEONSUNG.ttf');
+}
 
 .BannerVideo {
-    font-family: 'Sunflower', sans-serif;
+	font-family: 'BMYEONSUNG', sans-serif;
 }
