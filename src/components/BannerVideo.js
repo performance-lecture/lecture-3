@@ -1,11 +1,20 @@
 import React from 'react'
-import video from '../assets/banner-video.mp4'
+import video_webm from '../assets/_banner-video.webm'
+import video from '../assets/_banner-video.mp4'
 
 function BannerVideo() {
 	return (
 		<div className="BannerVideo w-full h-screen overflow-hidden relative bg-texture">
 			<div className="absolute h-screen w-full left-1/2">
-				<video src={video} className="absolute translateX--1/2 h-screen max-w-none min-w-screen -z-1 bg-black min-w-full min-h-screen" autoPlay loop muted/>
+        <video
+          className="absolute translateX--1/2 h-screen max-w-none min-w-screen -z-1 bg-black min-w-full min-h-screen" 
+          autoPlay 
+          loop 
+          muted
+        >
+          <source src={video_webm} type="video/webm" />
+          <source src={video} type="video/mp4" />
+        </video>
 			</div>
 			<div className="w-full h-full flex justify-center items-center">
 				<div className="text-white text-center">
