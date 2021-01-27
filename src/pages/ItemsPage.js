@@ -23,7 +23,7 @@ function ItemsPage(props) {
 	return (
 		<div className="ItemsPage -mt-16">
 			<BannerImage
-				text={'Items'}
+				text={'items'}
 				image={main_items}
 			/>
 			<div className="container mx-auto py-24">
