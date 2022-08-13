@@ -4,7 +4,9 @@
 
 @font-face {
 	font-family: BMYEONSUNG;
-	src: url('./assets/fonts/BMYEONSUNG.ttf');
+	src: url('./assets/fonts/BMYEONSUNG.woff2') format('woff2'),
+    url('./assets/fonts/BMYEONSUNG.woff') format('woff'),
+    url('./assets/fonts/BMYEONSUNG.ttf') format('truetype');
   font-display: block;
 }
 
